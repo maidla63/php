@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="et">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PHP Ülesanded (yl01–yl14)</title>
+
+    <!-- Bootstrap 5 (no custom CSS used) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+
+  <body class="bg-light">
+    <!-- Top bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="#">PHP Ülesanded</a>
+        <div class="d-flex gap-2 align-items-center">
+          <button class="btn btn-outline-light btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#tips" aria-controls="tips">
+            XAMPP nipid
+          </button>
+          <button class="btn btn-warning btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#about">
+            Mis see on?
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="py-4">
+      <div class="container">
+        <div class="p-4 p-md-5 bg-white rounded-4 shadow-sm border">
+          <div class="row align-items-center g-4">
+            <div class="col-12 col-lg-7">
+              <h1 class="display-6 mb-2">yl01 – yl14</h1>
+              <p class="text-secondary mb-0">
+                Vali ülesanne ja ava see eraldi lehel. Kui fail puudub, saad 404/vea — tee vastav <code>yl0X.php</code> valmis.
+              </p>
+            </div>
+            <div class="col-12 col-lg-5">
+              <div class="input-group">
+                <span class="input-group-text">Otsi</span>
+                <input id="search" type="text" class="form-control" placeholder="nt yl03 või kolmnurk..." />
+                <button class="btn btn-dark" type="button" id="clearBtn">Puhasta</button>
+              </div>
+              <div class="form-text">
+                Nipp: kirjuta <code>yl</code> või number (nt <code>07</code>).
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <main class="pb-5">
+      <div class="container">
+        <!-- Quick actions -->
+        <div class="d-flex flex-wrap gap-2 mb-3">
+          <a class="btn btn-primary" href="yl01.php" target="_blank" rel="noopener">Käivita yl01</a>
+          <a class="btn btn-outline-primary" href="yl02.php" target="_blank" rel="noopener">yl02</a>
+          <a class="btn btn-outline-primary" href="yl03.php" target="_blank" rel="noopener">yl03</a>
+          <a class="btn btn-outline-primary" href="yl04.php" target="_blank" rel="noopener">yl04</a>
+          <button class="btn btn-success" type="button" id="openAll">Ava valitud (uutes tabides)</button>
+        </div>
+
+        <!-- Accordion list -->
+        <div class="accordion shadow-sm" id="tasks">
+          <!-- yl01 -->
+          <div class="accordion-item task" data-tags="yl01 muutujad nimi synniaasta tahtkuju dr alban pilt echo">
+            <h2 class="accordion-header" id="h01">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#c01" aria-expanded="true" aria-controls="c01">
+                yl01 — muutujad + lause + ASCII pilt
+              </button>
+            </h2>
+            <div id="c01" class="accordion-collapse collapse show" aria-labelledby="h01" data-bs-parent="#tasks">
+              <div class="accordion-body">
+                <div class="d-flex flex-wrap gap-2 align-items-center">
+                  <span class="badge text-bg-dark">yl01</span>
+                  <span class="badge text-bg-secondary">PHP</span>
+                  <span class="badge text-bg-info">echo / PHP_EOL</span>
+                </div>
+                <hr />
+                <div class="row g-3 align-items-stretch">
+                  <div class="col-12 col-lg-8">
+                    <p class="mb-2 text-secondary">
+                      Kuvab 3 muutuja väärtust (eraldi ridadel), “It’s My Life” – Dr. Alban ja ASCII-kunsti.
+                    </p>
+                    <div class="btn-group" role="group" aria-label="yl01 actions">
+                      <a class="btn btn-primary" href="yl01.php" target="_blank" rel="noopener">Ava yl01.php</a>
+                      <a class="btn btn-outline-dark" href="yl01.php" download>Lae alla</a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="form-check">
+                          <input class="form-check-input pick" type="checkbox" value="yl01.php" id="p01">
+                          <label class="form-check-label" for="p01">Vali avamiseks</label>
+                        </div>
+                        <div class="small text-secondary mt-2">
+                          Avab uues tabis, kui vajutad “Ava valitud”.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- yl02 -->
+          <div class="accordion-item task" data-tags="yl02 aritmeetika liitmine lahutamine korrutamine jagamine jaak millimeeter sentimeeter meeter kolmnurk pindala ymbermoot">
+            <h2 class="accordion-header" id="h02">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c02" aria-expanded="false" aria-controls="c02">
+                yl02 — tehed + mm→cm/m + täisnurkne kolmnurk
+              </button>
+            </h2>
+            <div id="c02" class="accordion-collapse collapse" aria-labelledby="h02" data-bs-parent="#tasks">
+              <div class="accordion-body">
+                <div class="d-flex flex-wrap gap-2 align-items-center">
+                  <span class="badge text-bg-dark">yl02</span>
+                  <span class="badge text-bg-secondary">PHP</span>
+                  <span class="badge text-bg-success">matemaatika</span>
+                </div>
+                <hr />
+                <p class="mb-2 text-secondary">
+                  Näitab tehteid ridadel, teisendab mm cm-ks ja m-ks (2 kohta), ning leiab täisnurkse kolmnurga ümbermõõdu ja pindala.
+                </p>
+                <div class="d-flex flex-wrap gap-2">
+                  <a class="btn btn-primary" href="yl02.php" target="_blank" rel="noopener">Ava yl02.php</a>
+                  <a class="btn btn-outline-dark" href="yl02.php" download>Lae alla</a>
+                  <div class="form-check ms-2">
+                    <input class="form-check-input pick" type="checkbox" value="yl02.php" id="p02">
+                    <label class="form-check-label" for="p02">Vali avamiseks</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- yl03..yl14 (generic cards) -->
+          <div class="accordion-item task" data-tags="yl03">
+            <h2 class="accordion-header" id="h03">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c03" aria-expanded="false" aria-controls="c03">
+                yl03
+              </button>
+            </h2>
+            <div id="c03" class="accordion-collapse collapse" aria-labelledby="h03" data-bs-parent="#tasks">
+              <div class="accordion-body">
+                <p class="text-secondary mb-2">Ava fail ja vaata tulemust.</p>
+                <div class="d-flex gap-2 flex-wrap align-items-center">
+                  <a class="btn btn-primary" href="yl03.php" target="_blank" rel="noopener">Ava yl03.php</a>
+                  <a class="btn btn-outline-dark" href="yl03.php" download>Lae alla</a>
+                  <div class="form-check">
+                    <input class="form-check-input pick" type="checkbox" value="yl03.php" id="p03">
+                    <label class="form-check-label" for="p03">Vali avamiseks</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item task" data-tags="yl04">
+            <h2 class="accordion-header" id="h04">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c04" aria-expanded="false" aria-controls="c04">
+                yl04
+              </button>
+            </h2>
+            <div id="c04" class="accordion-collapse collapse" aria-labelledby="h04" data-bs-parent="#tasks">
+              <div class="accordion-body">
+                <p class="text-secondary mb-2">Ava fail ja vaata tulemust.</p>
+                <div class="d-flex gap-2 flex-wrap align-items-center">
+                  <a class="btn btn-primary" href="yl04.php" target="_blank" rel="noopener">Ava yl04.php</a>
+                  <a class="btn btn-outline-dark" href="yl04.php" download>Lae alla</a>
+                  <div class="form-check">
+                    <input class="form-check-input pick" type="checkbox" value="yl04.php" id="p04">
+                    <label class="form-check-label" for="p04">Vali avamiseks</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item task" data-tags="yl05">
+            <h2 class="accordion-header" id="h05">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c05" aria-expanded="false" aria-controls="c05">
+                yl05
+              </button>
+            </h2>
+            <div id="c05" class="accordion-collapse collapse" aria-labelledby="h05" data-bs-parent="#tasks">
+              <div class="accordion-body">
+                <p class="text-secondary mb-2">Ava fail ja vaata tulemust.</p>
+                <div class="d-flex gap-2 flex-wrap align-items-center">
+                  <a class="btn btn-primary" href="yl05.php" target="_blank" rel="noopener">Ava yl05.php</a>
+                  <a class="btn btn-outline-dark" href="yl05.php" download>Lae alla</a>
+                  <div class="form-check">
+                    <input class="form-check-input pick" type="checkbox" value="yl05.php" id="p05">
+                    <label class="form-check-label" for="p05">Vali avamiseks</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item task" data-tags="yl06">
+            <h2 class="accordion-header" id="h06">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c06" aria-expanded="false" aria-controls="c06">
+                yl06
+              </button>
+            </h2>
+            <div id="c06" class="accordion-collapse collapse" aria-labelledby="h06" data-bs-parent="#tasks">
+              <div class="accordion-body">
+                <p class="text-secondary mb-2">Ava fail ja vaata tulemust.</p>
+                <div class="d-flex gap-2 flex-wrap align-items-center">
+                  <a class="btn btn-primary" href="yl06.php" target="_blank" rel="noopener">Ava yl06.php</a>
+                  <a class="btn btn-outline-dark" href="yl06.php" download>Lae alla</a>
+                  <div class="form-check">
+                    <input class="form-check-input pick" type="checkbox" value="yl06.php" id="p06">
+                    <label class="form-check-label" for="p06">Vali avamiseks</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item task" data-tags="yl07">
+            <h2 class="accordion-header" id="h07">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c07" aria-expanded="false" aria-controls="c07">
+                yl07
+              </button>
+            </h2>
+            <div id="c07" class="accordion-collapse collapse" aria-labelledby="h07" data-bs-parent="#tasks">
+              <div class="accordion-body">
+                <p class="text-secondary mb-2">Ava fail ja vaata tulemust.</p>
+                <div class="d-flex gap-2 flex-wrap align-items-center">
+                  <a class="btn btn-primary" href="yl07.php" target="_blank" rel="noopener">Ava yl07.php</a>
+                  <a class="btn btn-outline-dark" href="yl07.php" download>Lae alla</a>
+                  <div class="form-check">
+                    <input class="form-check-input pick" type="checkbox" value="yl07.php" id="p07">
+                    <label class="form-check-label" for="p07">Vali avamiseks</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item task" data-tags="yl08">
+            <h2 class="accordion-header" id="h08">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c08" aria-expanded="false" aria-controls="c08">
+                yl08
+              </button>
+            </h2>
+            <div id="c08" class="accordion-collapse collapse" aria-labelledby="h08" data-bs-parent="#tasks">
+              <div class="accordion-body">
+                <p class="text-secondary mb-2">Ava fail ja vaata tulemust.</p>
+                <div class="d-flex gap-2 flex-wrap align-items-center">
+                  <a class="btn btn-primary" href="yl08.php" target="_blank" rel="noopener">Ava yl08.php</a>
+                  <a class="btn btn-outline-dark" href="yl08.php" download>Lae alla</a>
+                  <div class="form-check">
+                    <input class="form-check-input pick" type="checkbox" value="yl08.php" id="p08">
+                    <label class="form-check-label" for="p08">Vali avamiseks</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item task" data-tags="yl09">
+            <h2 class="accordion-header" id="h09">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c09" aria-expanded="false" aria-controls="c09">
+                yl09
+              </button>
+            </h2>
+            <div id="c09" class="accordion-collapse collapse" aria-labelledby="h09" data-bs-parent="#tasks">
+              <div class="accordion-body">
+                <p class="text-secondary mb-2">Ava fail ja vaata tulemust.</p>
+                <div class="d-flex gap-2 flex-wrap align-items-center">
+                  <a class="btn btn-primary" href="yl09.php" target="_blank" rel="noopener">Ava yl09.php</a>
+                  <a class="btn btn-outline-dark" href="yl09.php" download>Lae alla</a>
+                  <div class="form-check">
+                    <input class="form-check-input pick" type="checkbox" value="yl09.php" id="p09">
+                    <label class="form-check-label" for="p09">Vali avamiseks</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item task" data-tags="yl10">
+            <h2 class="accordion-header" id="h10">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c10" aria-expanded="false" aria-controls="c10">
+                yl10
+              </button>
+            </h2>
+            <div id="c10" class="accordion-collapse collapse" aria-labelledby="h10" data-bs-parent="#tasks">
+              <div class="accordion-body">
+                <p class="text-secondary mb-2">Ava fail ja vaata tulemust.</p>
+                <div class="d-flex gap-2 flex-wrap align-items-center">
+                  <a class="btn btn-primary" href="yl10.php" target="_blank" rel="noopener">Ava yl10.php</a>
+                  <a class="btn btn-outline-dark" href="yl10.php" download>Lae alla</a>
+                  <div class="form-check">
+                    <input class="form-check-input pick" type="checkbox" value="yl10.php" id="p10">
+                    <label class="form-check-label" for="p10">Vali avamiseks</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item task" data-tags="yl11">
+            <h2 class="accordion-header" id="h11">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c11" aria-expanded="false" aria-controls="c11">
+                yl11
+              </button>
+            </h2>
+            <div id="c11" class="accordion-collapse collapse" aria-labelledby="h11" data-bs-parent="#tasks">
+              <div class="accordion-body">
+                <p class="text-secondary mb-2">Ava fail ja vaata tulemust.</p>
+                <div class="d-flex gap-2 flex-wrap align-items-center">
+                  <a class="btn btn-primary" href="yl11.php" target="_blank" rel="noopener">Ava yl11.php</a>
+                  <a class="btn btn-outline-dark" href="yl11.php" download>Lae alla</a>
+                  <div class="form-check">
+                    <input class="form-check-input pick" type="checkbox" value="yl11.php" id="p11">
+                    <label class="form-check-label" for="p11">Vali avamiseks</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item task" data-tags="yl12">
+            <h2 class="accordion-header" id="h12">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c12" aria-expanded="false" aria-controls="c12">
+                yl12
+              </button>
+            </h2>
+            <div id="c12" class="accordion-collapse collapse" aria-labelledby="h12" data-bs-parent="#tasks">
+              <div class="accordion-body">
+                <p class="text-secondary mb-2">Ava fail ja vaata tulemust.</p>
+                <div class="d-flex gap-2 flex-wrap align-items-center">
+                  <a class="btn btn-primary" href="yl12.php" target="_blank" rel="noopener">Ava yl12.php</a>
+                  <a class="btn btn-outline-dark" href="yl12.php" download>Lae alla</a>
+                  <div class="form-check">
+                    <input class="form-check-input pick" type="checkbox" value="yl12.php" id="p12">
+                    <label class="form-check-label" for="p12">Vali avamiseks</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item task" data-tags="yl13">
+            <h2 class="accordion-header" id="h13">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c13" aria-expanded="false" aria-controls="c13">
+                yl13
+              </button>
+            </h2>
+            <div id="c13" class="accordion-collapse collapse" aria-labelledby="h13" data-bs-parent="#tasks">
+              <div class="accordion-body">
+                <p class="text-secondary mb-2">Ava fail ja vaata tulemust.</p>
+                <div class="d-flex gap-2 flex-wrap align-items-center">
+                  <a class="btn btn-primary" href="yl13.php" target="_blank" rel="noopener">Ava yl13.php</a>
+                  <a class="btn btn-outline-dark" href="yl13.php" download>Lae alla</a>
+                  <div class="form-check">
+                    <input class="form-check-input pick" type="checkbox" value="yl13.php" id="p13">
+                    <label class="form-check-label" for="p13">Vali avamiseks</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item task" data-tags="yl14">
+            <h2 class="accordion-header" id="h14">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c14" aria-expanded="false" aria-controls="c14">
+                yl14
+              </button>
+            </h2>
+            <div id="c14" class="accordion-collapse collapse" aria-labelledby="h14" data-bs-parent="#tasks">
+              <div class="accordion-body">
+                <p class="text-secondary mb-2">Ava fail ja vaata tulemust.</p>
+                <div class="d-flex gap-2 flex-wrap align-items-center">
+                  <a class="btn btn-primary" href="yl14.php" target="_blank" rel="noopener">Ava yl14.php</a>
+                  <a class="btn btn-outline-dark" href="yl14.php" download>Lae alla</a>
+                  <div class="form-check">
+                    <input class="form-check-input pick" type="checkbox" value="yl14.php" id="p14">
+                    <label class="form-check-label" for="p14">Vali avamiseks</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="mt-4 alert alert-dark mb-0">
+          Kui mõni ülesanne ei avane, siis kontrolli et fail on olemas samas kaustas: <code>yl01.php</code> ... <code>yl14.php</code>.
+        </div>
+      </div>
+    </main>
+
+    <!-- Offcanvas tips -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="tips" aria-labelledby="tipsLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="tipsLabel">XAMPP / localhost nipid</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <div class="fw-semibold">1) Apache peab jooksma</div>
+            XAMPP Control Panel → Apache → Start.
+          </li>
+          <li class="list-group-item">
+            <div class="fw-semibold">2) Ava läbi localhosti</div>
+            Nt <code>http://localhost/php/yl01.php</code> (mitte topeltklõpsuga failil).
+          </li>
+          <li class="list-group-item">
+            <div class="fw-semibold">3) Failinimed</div>
+            Hoia kujul <code>yl01.php</code>, <code>yl02.php</code> jne.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Modal about -->
+    <div class="modal fade" id="about" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Ülesannete vaade</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            pHp launcher, et lihtsamalt avada ülessandeid.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Tiny vanilla JS (no CSS) -->
+    <script>
+      const search = document.getElementById('search');
+      const clearBtn = document.getElementById('clearBtn');
+      const tasks = Array.from(document.querySelectorAll('.task'));
+      const openAll = document.getElementById('openAll');
+
+      function applyFilter() {
+        const q = (search.value || '').trim().toLowerCase();
+        tasks.forEach(t => {
+          const tags = (t.getAttribute('data-tags') || '').toLowerCase();
+          const text = t.innerText.toLowerCase();
+          const show = !q || tags.includes(q) || text.includes(q);
+          t.classList.toggle('d-none', !show);
+        });
+      }
+
+      search.addEventListener('input', applyFilter);
+      clearBtn.addEventListener('click', () => { search.value = ''; applyFilter(); });
+
+      openAll.addEventListener('click', () => {
+        const picks = Array.from(document.querySelectorAll('.pick:checked')).map(x => x.value);
+        if (picks.length === 0) {
+          alert('Vali vähemalt üks ülesanne (checkbox) enne avamist.');
+          return;
+        }
+        picks.forEach(p => window.open(p, '_blank', 'noopener'));
+      });
+    </script>
+  </body>
+</html>
