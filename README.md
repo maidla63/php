@@ -91,7 +91,3 @@ See on õpperepo, aga kui keegi tahab ideid/ülesandeid lisada:
 2. Uus branch
 3. Muudatused + commit
 4. Pull Request
-
-## Litsents
-Kui sa ei ole litsentsi valinud, siis lisa siia sobiv (nt MIT).  
-Ajutiselt: **All rights reserved** (kuni litsents on otsustatud).
