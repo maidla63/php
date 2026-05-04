@@ -13,7 +13,7 @@ $action = v('do');
 
 echo "<!doctype html><html lang='et'><head><meta charset='utf-8'><title>yl04</title></head><body>";
 
-echo "<h1>Ülesanne 4</h1>";/
+echo "<h1>Ülesanne 4</h1>";
 
 
 echo "<h2>1) Jagamine</h2>";
